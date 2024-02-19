@@ -41,15 +41,19 @@ input, textarea {
 /*index.html*/
 
 /*NAVIGATION*/
-.navbar-transparent {
+.navbar {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 1000;
+	background-color: #e9e9e9;
 }
 nav .container{
-	padding-top: 0; 
+	padding-top: 15px; 
+	padding-bottom: 15px;
+	display: flex;
+	justify-content: space-between;
 }
 .logo-big {
 	height: 32px;
