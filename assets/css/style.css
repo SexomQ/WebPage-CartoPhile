@@ -42,6 +42,112 @@ input, textarea {
 
 /*index.html*/
 
+/* MASCOT */
+.mascot {
+	position: fixed;
+	bottom: -200px;
+	right: 0;
+	width: 200px;
+	height: auto;
+	z-index: 1001;
+
+	animation: bounce 1.3s;
+	animation-direction: alternate;
+	animation-timing-function: cubic-bezier(0.5, 0.5, 0.05, 0.5);
+	animation-iteration-count: infinite;
+  animation-delay: 5s;
+}
+
+.mascot img {
+	width: 100%;
+	height: auto;
+}
+/* @keyframes bounce {
+	0% {
+	  transform: translate3d(0, 0, 0);
+	}
+	79%{
+	  width:200px;
+	  height:200px;
+	}
+	80% {
+	  transform: translate3d(0, 180px, 0);
+	}100%{
+	  width:260px;
+	  height:180px;
+	  transform: translate3d(0, 200px, 0);
+	}
+} */
+@keyframes bounce{
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	/* 20% {
+		transform: translate3d(0, -180px, 0);
+	} */
+	100% {
+		transform: translate3d(0, -380px, 0);
+	}
+
+}
+
+.dialog-box {
+	display: none;
+	position: absolute;
+	height: 100px;
+	width: 200px;
+	top: -40px;
+	left: -160px;
+	border-radius: 10px;
+	margin-bottom: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+  }
+
+.mascot:hover .dialog-box {
+	display: block;
+}
+  
+  .dialog-box .header {
+	height: 25px;
+	position: relative;
+	color: black;
+  }
+  
+  .background-blur {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+  }
+  
+  .left {
+	float: left;
+	text-align: left;
+	padding: 3px 0 0 10px;
+	font-size: 18px;
+  }
+  
+  .right {
+	float: right;
+	text-align: right;
+	padding: 3px 10px 0 0;
+  }
+  
+  .contents {
+	z-index: 100;
+	position: inherit;
+	font-size: 0.8em;
+  }
+  
+  .main-content {
+	padding: 8px 20px 10px 10px;
+	font-size: 20px;
+  }
+
+  .main-content strong {
+	font-weight: 700;
+  }
 
 /*NAVIGATION*/
 .navbar {
